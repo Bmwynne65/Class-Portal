@@ -38,7 +38,7 @@
 
 /* styles.css */
 h1 {
-    font-family: 'Dela Gothic One', sans-serif; /* Specify the font family */
+    font-family: 'Dela Gothic One'; /* Specify the font family */
     font-size: 36px; /* Adjust the font size as needed */
     color: #333; /* Text color */
     text-align: center; /* Center-align the text */
@@ -47,7 +47,7 @@ h1 {
 }
 /* styles.css */
 h2 {
-    font-family: 'Dela Gothic One', sans-serif; /* Specify the font family */
+    font-family: 'Dela Gothic One'; /* Specify the font family */
     font-size: 24px; /* Adjust the font size as needed */
     color: #666; /* Text color */
     font-weight: bold; /* Make the text bold */
@@ -56,7 +56,7 @@ h2 {
 
 /* styles.css */
 p {
-    font-family: 'Exo 2', sans-serif; /* Specify the font family */
+    font-family: 'Exo 2'; /* Specify the font family */
     font-size: 16px; /* Adjust the font size as needed */
     color: #333; /* Text color */
     line-height: 1.5; /* Adjust line height for better readability */
