@@ -1,3 +1,4 @@
+
 /* Style the navigation bar */
 .navbar {
     background-color: #333;
@@ -33,4 +34,14 @@
 .about-me p {
     font-size: 18px;
     line-height: 1.6;
+}
+
+/* styles.css */
+h1 {
+    font-family: 'Dela Gothic One', sans-serif; /* Specify the font family */
+    font-size: 36px; /* Adjust the font size as needed */
+    color: #333; /* Text color */
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Add some top margin for spacing */
+    font-weight: bold; /* Make the text bold */
 }
