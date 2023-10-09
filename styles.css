@@ -20,22 +20,6 @@
     color: black;
 }
 
-/* Style the "About Me" section */
-.about-me {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Style the page heading */
-.about-me h1 {
-    font-size: 24px;
-}
-
-/* Style the main content */
-.about-me p {
-    font-size: 18px;
-    line-height: 1.6;
-}
 
 /* styles.css */
 h1 {
