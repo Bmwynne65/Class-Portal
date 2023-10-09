@@ -46,3 +46,11 @@ p {
     color: #333; /* Text color */
     line-height: 1.5; /* Adjust line height for better readability */
 }
+/*@import url('https://fonts.googleapis.com/icon?family=Material')*/
+material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
