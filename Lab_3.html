@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles.css">
+    <title>Accessible Page Example</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Navigation Menu</h1> <!-- Add a title for your navigation bar -->
+        <a href="index.html">About Me</a>
+        <a href="wiki_page.html">Wiki Page</a>
+        <a href="Lab_3.html">Lab #3</a>
+        <!-- Add more navigation links here -->
+    </nav>
+    <nav>
+        <ul>
+            <li><a href="#main-content">Skip to Content</a></li>
+            <li><a href="#nav">Skip to Navigation</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Accessible Page Example</h1>
+    </header>
+    <main id="main-content">
+        <h2>Accessible Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+        </form>
+        <h2>Accessible Data Table</h2>
+        <table>
+            <caption>Sample Data Table</caption>
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <nav id="nav">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>&copy; 2023 Your Company</p>
+    </footer>
+</body>
+</html>
