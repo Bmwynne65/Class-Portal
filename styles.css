@@ -123,3 +123,7 @@ nav#nav a {
     color: #fff;
 }
 */
+h1.hidden {
+    position: absolute;
+    left: -9999px;
+}
