@@ -145,3 +145,12 @@ skip-link {
 skip-link {
     transition: transform 0.3s;
 }
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 1.5em;
+    border: 1px black solid;
+}
