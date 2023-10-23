@@ -43,7 +43,7 @@ h2 {
 p {
     font-family: 'Exo 2'; /* Specify the font family */
     font-size: 16px; /* Adjust the font size as needed */
-    color: #333; /* Text color */
+    color: black; /* Text color */
     line-height: 1.5; /* Adjust line height for better readability */
 }
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
