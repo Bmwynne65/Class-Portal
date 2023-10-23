@@ -54,3 +54,70 @@ p {
   'GRAD' 0,
   'opsz' 24
 }*/
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+caption {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav#nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    transition: left 0.3s;
+}
+
+nav#nav a {
+    text-decoration: none;
+    color: #fff;
+}
