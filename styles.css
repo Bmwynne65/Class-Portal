@@ -132,7 +132,7 @@ body.hidden {
     position: absolute;
     left: -9999px;
 }
-
+/*
 skip-link {
     background: black;
     color: #fff;
@@ -145,6 +145,28 @@ skip-link {
 skip-link {
     transition: transform 0.3s;
 }
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+*/
+/* Centered Skip Nav */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    opacity: 0;
+  }
+.skip-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
 
 header,
 nav,
