@@ -2,24 +2,47 @@
 /* Style the navigation bar */
 .navbar {
     background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    text-align: center;
     overflow: hidden;
 }
 
 .navbar a {
-    font-family: 'Asap Condensed'; /* Specify the font family */
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 10px 12px;
+    color: #fff;
+    font-size: 18px;
     text-decoration: none;
-    display: flex;
+    padding: 10px 0; /* Adjust padding to create vertical spacing */
+    display: block; /* Make the links stack on top of each other */
+    transition: background-color 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: rgb(0, 0, 0);
+    background-color: #555; /* Touch-friendly hover state */
 }
+
+.navbarH {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    justify-content: space-around;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbarH a {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px 0; /* Adjust padding to create vertical spacing */
+    display: block; /* Make the links stack on top of each other */
+    transition: background-color 0.3s;
+}
+
+.navbarH a:hover {
+    background-color: #555; /* Touch-friendly hover state */
+}
+
 
 
 /* styles.css */
@@ -99,32 +122,9 @@ button {
     padding: 10px 20px;
     cursor: pointer;
 }
-/*
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-*/
-/*
-nav#nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 200px;
-    transition: left 0.3s;
-}
 
-nav#nav a {
-    text-decoration: none;
-    color: #fff;
-}
-*/
 h1.hidden {
+    color: red;
     position: absolute;
     left: -9999px;
 }
@@ -133,26 +133,7 @@ body.hidden {
     position: absolute;
     left: -9999px;
 }
-/*
-skip-link {
-    background: black;
-    color: #fff;
-    font-weight: 700;
-    padding: 4px;
-    position: absolute;
-    transform: translateY(-200%);
-}
 
-skip-link {
-    transition: transform 0.3s;
-}
-
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
-*/
 /* Centered Skip Nav */
 .skip-link {
     position: absolute;
@@ -169,28 +150,23 @@ a:-webkit-any-link {
     opacity: 1;
 }
 
-/* header,
-nav,
-main,
-aside,
-footer {
-    padding: 1.5em;
-    border: 1px black solid;
-} */
-
 /* Card */
 .card-container {
-    display: flex;
+    border: 3px solid #fff;
+    padding: 20px;
+    
 }
 .card {
     grid-area: aside1;
-    width: 300px;
+    width: 600px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     background-color: #fff;
     margin: 10px;
+    float: left;
+    
 }
 
 .card img {
@@ -223,60 +199,152 @@ p {
     margin: 1.8em 0;
     line-height: 1.8em;
 }
-
-header,
+/* header
 nav,
 main,
-aside,
-footer {
+aside {
     padding: 1.5em;
-}
+} */
 
 header, 
 footer {
     text-align: center;
 }
+
+/* Lab_04 grid/media screens */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 .container {
-    display: flex;
-    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    background: rgb(90, 87, 87);
+    background: rgb(255, 255, 255);
+    display: grid;
+    /* width: 100vw;
+    height: 100vw; */
+    grid-template-columns: 
+    1fr        2fr      1fr;
+    grid-template-areas: 
+    "heady      heady       heady"
+    "navvy      navvy       navvy"
+    "aside1     mainy       aside2"
+    "aside1     mainy       aside2"
+    "aside1     mainy       aside2"
+    "footy      footy       footy";
 }
 
-.card {
+header {grid-area: heady; background: rgb(255, 255, 255);}
+nav {grid-area: navvy; background: rgb(0, 0, 0);}
+main {grid-area: mainy; background: rgb(255, 255, 255); max-height: 100%;}
+#aside1 {grid-area: aside1; background: rgb(255, 255, 255);}
+#aside2 {grid-area: aside2; background: rgb(0, 0, 0);}
+footer {grid-area: footy; background: rgb(255, 255, 255);}
+
+nav ul {
     display: flex;
-    width: 33.33%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(252, 1, 1, 0.1);
-    flex-direction: column;
-    overflow: hidden;
-    background-color: #fff;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+nav ul li {
+    list-style: none;
 }
 
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.description-box {
-    padding: 20px;
-    border-top: 1px solid #ccc;
-}
-
-@media screen and (min-width: 200px) and (max-width: 900px) {
-    /* Card */
+/* Tablet like */
+@media screen 
+    and (min-width: 641px)
+    and (max-width: 900px)  {
     .container {
-        flex-direction: column; /* Stack cards on top of each other */
-        align-items: center; /* Center align the cards within the container */
+        align-items: center;
+        grid-template-columns: 
+        1fr         1fr;
+        grid-template-areas: 
+        "heady  heady"
+        "navvy  navvy"
+        "mainy  mainy"
+        "aside1 aside1"
+        "footy  footy";
+    }
+    
+    /* Style the navigation bar */
+    .navbar {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        text-align: center;
     }
 
-    .card {
-        width: 80%; /* Adjust the width for smaller screens */
+    .navbar a {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 10px 0; /* Adjust padding to create vertical spacing */
+        display: block; /* Make the links stack on top of each other */
+        transition: background-color 0.3s;
     }
-    /* Navbar */
-    .navbar {
-        flex-direction: column; /* Stack links vertically */
+
+    .navbar a:hover {
+        background-color: #555; /* Touch-friendly hover state */
     }
+
+    .navbarH {
+        background-color: rgb(255, 255, 255);
+        display: block;
+        justify-content: space-around;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbarH a {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        text-decoration: none;
+        padding: 10px 0; /* Adjust padding to create vertical spacing */
+        display: block; /* Make the links stack on top of each other */
+        transition: background-color 0.3s;
+    }
+
+    .navbarH a:hover {
+        background-color: #555; /* Touch-friendly hover state */
+    }
+
 }
+/* small mobile */
+@media screen 
+     and (max-width: 640px) {
+    .container {
+        grid-template-columns: 
+        1fr;
+        grid-template-areas:
+        "heady"
+        "navvy"
+        "mainy"
+        "aside1"
+        "aside2"
+        "footy";
+    }
+    .navbar {
+        background-color: rgb(0, 0, 0);
+        display: block;
+        justify-content: space-around;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    .navbar a {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 10px 0; /* Adjust padding to create vertical spacing */
+        display: block; /* Make the links stack on top of each other */
+        transition: background-color 0.3s;
+    }
+    
+    .navbar a:hover {
+        background-color: #555; /* Touch-friendly hover state */
+    }
+     }
