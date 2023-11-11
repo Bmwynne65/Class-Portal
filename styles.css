@@ -154,7 +154,9 @@ body.hidden {
     transform: translateX(-50%);
     opacity: 1;
 }
-
+.pic {
+    width: 100%;
+}
 /* Card */
 .card {
     grid-area: aside1;
