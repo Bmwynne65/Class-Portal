@@ -11,7 +11,8 @@
     <title>Accessible Page Example</title>
 </head>
 <body id="body">
-    <a class="skip-link" href="#maincontent">Skip to main content</a>
+    <div class="container">
+        <a class="skip-link" href="#maincontent">Skip to main content</a>
     <h1 class="hidden"> Type 2 Civilizations</h1>
     <nav class="navbar" id="nav">
         <h1 class="hidden">Nav Bar</h1> <!-- Add a title for your navigation bar -->
@@ -21,39 +22,47 @@
         <a href="Lab_04.html">Lab #4</a>
         <!-- Add more navigation links here -->
     </nav>
-    
-    <details>
-        <summary>
-            Page Navigation
-        </summary>
-        <p>
-            <nav>
-                <ul>
-                    <li><a href="#first-publication">First Publication</a> 
-                        <span aria-hidden="true" class="material-icons">
-                            arrow_forward
-                        </span>
-                    </li>
-                    <li><a href="#accessible-form">Accessible Form</a> 
-                        <span aria-hidden="true" class="material-icons">
-                            arrow_forward
-                        </span>
-                    </li>
-                    <li><a href="#accessible-data-table">Accessible Data Table</a> 
-                        <span aria-hidden="true" class="material-icons">
-                        arrow_forward
-                        </span>
-                    </li>
-                </ul>
-            </nav>
-        </p>
-    </details>
 
 
     <header>
         <h1>Kardashev scale</h1>
     </header>
+    <nav class="navbar" id="nav">
+        <h1 class="hidden">Nav Bar</h1> <!-- Add a title for your navigation bar -->
+        <a href="index.html">About Me</a>
+        <a href="wiki_page.html">Wiki Page</a>
+        <a href="Lab_3.html">Lab #3</a>
+        <a href="Lab_04.html">Lab #4</a>
+        <!-- Add more navigation links here -->
+    </nav>
+    
     <main id="main-content">
+        <details>
+            <summary>
+                Page Navigation
+            </summary>
+            <p>
+                <nav>
+                    <ul>
+                        <li><a href="#first-publication">First Publication</a> 
+                            <span aria-hidden="true" class="material-icons">
+                                arrow_forward
+                            </span>
+                        </li>
+                        <li><a href="#accessible-form">Accessible Form</a> 
+                            <span aria-hidden="true" class="material-icons">
+                                arrow_forward
+                            </span>
+                        </li>
+                        <li><a href="#accessible-data-table">Accessible Data Table</a> 
+                            <span aria-hidden="true" class="material-icons">
+                            arrow_forward
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </p>
+        </details>
         <p>
             The Kardashev scale (Russian: Шкала Кардашева, romanized: Shkala Kardasheva) is a method of measuring a civilization's level of technological advancement based on the amount of energy it is capable of using. The measure was proposed by Soviet astronomer Nikolai Kardashev (1932–2019)[1] in 1964[2] and was named after him.
 
@@ -124,6 +133,7 @@
                 </tr>
             </tbody>
         </table>
+    </div>
     </main>
     <footer>
         <p>site by Braxton Wynne

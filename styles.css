@@ -46,6 +46,11 @@
 
 
 /* styles.css */
+body {
+    display: block;
+    margin: 8px;
+}
+
 h1 {
     font-family: 'Dela Gothic One'; /* Specify the font family */
     font-size: 36px; /* Adjust the font size as needed */
@@ -151,11 +156,6 @@ body.hidden {
 }
 
 /* Card */
-.card-container {
-    border: 3px solid #fff;
-    padding: 20px;
-    
-}
 .card {
     grid-area: aside1;
     width: 600px;
@@ -166,18 +166,30 @@ body.hidden {
     background-color: #fff;
     margin: 10px;
     float: left;
-    
+}
+
+.cardA {
+    grid-area: aside1;
+    width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    margin: 10px;
+    float: left;
 }
 
 .card img {
     width: 100%;
     height: auto;
 }
-
 .card-content {
     padding: 20px;
 }
 
+
+/* details */
 
 /* Flexbox/Responsive */
 
